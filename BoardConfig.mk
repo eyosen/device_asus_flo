@@ -24,4 +24,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/asus/flo
 
 TARGET_RECOVERY_FSTAB = device/asus/flo/fstab.flo
 
+# CMHW
+BOARD_HARDWARE_CLASS := device/asus/flo/cmhw
+
 include device/asus/flo/BoardConfigCommon.mk
