@@ -135,6 +135,14 @@ on boot
 # Tune buffersize for higher Miracast throughput
     setprop net.tcp.buffersize.wifi 524288,1048576,2560000,524288,1048576,2560000
 
+# Sweep2wake
+   chown system system /sys/android_touch/sweep2wake
+   chmod 0664 /sys/android_touch/sweep2wake
+
+# DoubleTap2wake
+   chown system system /sys/android_touch/doubletap2wake
+   chmod 0664 /sys/android_touch/doubletap2wake
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
